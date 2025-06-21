@@ -38,7 +38,25 @@ def test_validacao_estrutural():
     
     assert arvore.altura >= 2
 
+
+def test_pos_condicao_chaves():
+    """Testa a pós-condição 1: Para nó-raiz, 1 ≤ numChaves ≤ 2·t; para nós internos, t−1 ≤ numChaves ≤ 2·t"""
+    arvore = BTree(t=3)
+    
+    # Teste com árvore vazia (deve falhar na pós-condição)
+    with pytest.raises(AssertionError):
+        arvore._valida_pos_condicao_chaves()
+    
+    # Teste com inserções que devem manter a pós-condição
+    chaves = [10, 20, 5, 6, 12, 30, 7, 17, 25, 35, 40, 45, 50]
+    for chave in chaves:
+        arvore.inserir(chave)
+        # Após cada inserção, a pós-condição deve ser válida
+        assert arvore._valida_pos_condicao_chaves(), f"Pós-condição de chaves violada após inserir {chave}"
+
+
 if __name__ == "__main__":
     test_arvore_b()
     test_validacao_estrutural()
+    test_pos_condicao_chaves()
     print("Todos os testes passaram!")
