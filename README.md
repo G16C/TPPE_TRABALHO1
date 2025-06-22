@@ -8,12 +8,12 @@
 
 ## 👥 Integrantes do Grupo
 
-| Nome completo                          |
-|----------------------------------------|
-| Gabriel Campello Marques               |
-| Mateus Fidelis Marinho Maia            |
-| Cainã Valença de Freitas               |
-| Pedro Augusto Dourado Izarias          |
+| Nome completo                          | Matrícula
+|----------------------------------------|----------------------------------------|
+| Gabriel Campello Marques               | 211039439                              |
+| Mateus Fidelis Marinho Maia            | 200073184                              |
+| Cainã Valença de Freitas               | 180014412                              |
+| Pedro Augusto Dourado Izarias          | 200062620                              |
 
 ## 📌 Descrição
 
